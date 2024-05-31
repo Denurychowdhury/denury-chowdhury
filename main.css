@@ -1,0 +1,170 @@
+.about-container{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.star-mark{
+    display: flex;
+    flex-direction: column;
+}
+.fa-star{
+    color: var(--button-color);
+}
+.desc h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.star-desc h3{
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.desc p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #5d5d5d;
+}
+
+/* end about section */
+
+.experience-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.description h1{
+    text-transform:uppercase;
+}
+.duration{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 30px; 
+}
+.duration .job-details{
+    border-bottom: 1px solid var(--font-primary-color);
+}
+.job-details{
+    display: flex;
+}
+.job-details h2{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+}
+.job-details h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* end about section */
+
+/* start award section */
+.caption{
+    text-align: center;
+}
+.award-details{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.award-time{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin-top: 20px;
+}
+.desc p{
+    padding: 30px 0px;
+}
+.my-portfolio .caption h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.my-portfolio .caption p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #5d5d5d;
+    margin-bottom: 30px;
+}
+.my-portfolio .button{
+    margin-bottom: 30px;
+}
+.my-portfolio .caption a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: black;
+    padding-right: 10px;
+    padding: 10px 20px;
+
+
+}
+.my-portfolio .caption .web{
+    background-color:var(--button-color);
+}
+.my-portfolio .web-design{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    text-align: left;
+    padding-top: 40px;
+}
+.my-portfolio .web-design h2{
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.my-portfolio .web-design p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+@media only screen and (min-width:200px) and (max-width:600px){
+    .about{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px 0px;
+    }
+    .experience-details{
+        flex-direction: column;
+    }
+    .experience-details .description{
+        text-align: center;
+    }
+    .experience-details .description{
+        font-size: 10px;
+    }
+    .experience-details .duration{
+        margin: 0px 30px;
+    }
+    .award-details {
+        flex-direction: column;
+        text-align: center;
+    }
+    .award-time {
+        flex-direction: column;
+    }
+    .my-portfolio .web-design{
+        flex-direction: column;
+        text-align: center;
+        text-align: center;
+    }
+    .my-portfolio .caption p{
+        text-align: center;
+    font-size: 10px;
+}
+.my-portfolio .button a{
+    display: none;
+}
+}
